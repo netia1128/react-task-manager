@@ -59,6 +59,17 @@ body {
   margin: 5px;
   padding: 10px 20px;
   cursor: pointer;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "details task-button"
+    "details task-button";
+}
+
+.task button {
+  grid-area: task-button;
+  justify-self: end;
+  width: 150px;
 }
 
 .task.reminder {
