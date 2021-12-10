@@ -1,7 +1,7 @@
-const Header = (props) => {
+const Header = ({user}) => {
   return (
     <header>
-      <h1>{props.user}'s Task Manager App</h1>
+      <h1>{user}'s Task Manager App</h1>
     </header>
   )
 }
