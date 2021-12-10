@@ -1,10 +1,10 @@
-const Button = ({color, text}) => {
-  const logHelloWorld = () => {
-    console.log('Hello World')
-  }
+const Button = ({color, text, onClick}) => {
+  // const logHelloWorld = () => {
+  //   console.log('Hello World')
+  // }
 
   return <button 
-            onClick={logHelloWorld}
+            onClick={onClick}
             className='btn'
             style={{ backgroundColor: color }}>{text}
          </button>
